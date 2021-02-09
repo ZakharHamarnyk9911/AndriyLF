@@ -35,32 +35,46 @@
 				</ul>
 			</nav>
     <form>
-        <div>
-        <div class="row gtr-uniform">
-            <div class="col-6 col-12-xsmall">
-                <input type="text" name="name" id="name" value="" placeholder="First name" >
-                    
-            </div>
-        </div>
-        <div> 
-        <div class="col-6 col-12-xsmall">
-                <input type="text" name="name" id="name" value="" placeholder="Second Name" >
-
-            </div>
-        </div>
-        <div>
-            <div class="row gtr-uniform">
-                <div class="col-6 col-12-xsmall">
-                    <input type="email" name="email" id="email" value="" placeholder="email" >
-                        
-                </div>
-            </div>
-            <div class="col-12">
-                <ul class="actions">
-                    <li><input type="submit" value="Submit Form" class="primary" /></li>
-                    <li><input type="reset" value="Reset" /></li>
-                </ul>
-            </div>
-        </div>
+      <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required >
+      </div>
+      <div>
+        <label for="surname">Surname</label>
+        <input type="text" name="Surname" id="Surname" required>
+      </div>
+      <div>
+          <label for="date">Birthday</label>
+           <input type="date" name="date" id="date" max="2021-12-29" > 
+          </label>
+      </div>
+      <div>
+      Gender
+      <div>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male">
+      </div>
+      <div>
+        <label for="Female">Female</label>
+        <input type="radio" name="gender" id="Female" value="female">
+      </div>
+       <div>
+        <label for="email">Email</label>
+        <input type="text" name="Email" id="Email" required>
+    </div>
+    <div>
+        <label for="About myself">About myself</label>
+        <textarea id="About myself" name="About myself">
+</textarea>
+    </div>
+    <input type="hidden" name="hidden" value="hi">
+    <div>
+        <label >
+        Password
+    </label>
+        <input type="password" name="Password"  required>
+    </div>
+    <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
     </form>
 </body>
